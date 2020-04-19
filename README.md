@@ -1,21 +1,20 @@
 # Foreword
 
-I have forked this from [Tpope's Vividchalk](https://github.com/tpope/vim-vividchalk)
+I have forked this from [ParamagicDev's medic_chalk](https://github.com/ParamagicDev/vim-medic_chalk) who forked from [Tpope's Vividchalk](https://github.com/tpope/vim-vividchalk)
 and slightly modified it.
 
-All credit goes to him. Check him out. He has many great Vim plugins.
+All credit goes to both. Check them out. Tpope has many great Vim plugins.
 
 ## Installation
 
 ```vimL
 call plug#begin()
-  Plug 'ParamagicDev/vim-medic_chalk'
+  Plug 'rarean/vim-rare_chalk'
 call plug#end()
 
-colorscheme medic_chalk
+colorscheme rare_chalk
 ```
 
-![Gif of colorscheme](https://thumbs.gfycat.com/MistyScientificBlackmamba-size_restricted.gif)
 
 Below is a sample for `~/.Xresources` taken from RomainL
 
@@ -38,24 +37,11 @@ Below is a sample for `~/.Xresources` taken from RomainL
     *.color7:     #FFFFFF
     *.color15:    #808080
 
-## Differences from VividChalk
+## Differences from Medic_Chalk
 
 There aren't many differences,
 
-I changed the way the auto completion menu is handled.
-
-I also changed the fact that the current cursor row was underlined.
-
-I also changed how splits appears, colorcolumn appears, and
-how matched parentheses appear.
-
-Altered fallback values for GUI StatusLines and Normal highlighting.
-
-Altered the way non-current status line is highlighted.
-
-Added a highlight link for NERDTree (Sorry TPope, I know you like NETRW w/ vinegar)
-
-Added a color palette to the README for easier porting of the colorscheme.
+I added syntax highlighting for ES6 jascript and various React plugins.
 
 Overall, it's pretty much the same just with a few adjustments. TPope did
 All the heavy lifting on this one.
