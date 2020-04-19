@@ -1,8 +1,8 @@
 " Vim color scheme
-" Name:         medicchalk.vim
-" Author:       Konnor Rogers <konnor7414@gmail.com>
+" Name:         rarechalk.vim
+" Author:       Aaron Perez <db.robot@yahoo.com>
 " Version:      1.0
-" GetLatestVimScripts: 1891 1 :AutoInstall: medicchalk.vim
+" GetLatestVimScripts: 1891 1 :AutoInstall: rarechalk.vim
 
 " Based on the VividChalk colorscheme made by Tpope which is based on Vibrant Ink
 " Distributable under the same terms as Vim itself (see :help license)
@@ -15,7 +15,7 @@ if exists("syntax_on")
    syntax reset
 endif
 
-let colors_name = "medic_chalk"
+let colors_name = "rare_chalk"
 
 " First two functions adapted from inkpot.vim
 
@@ -78,6 +78,19 @@ hi link rubyRegexp          Regexp
 hi link rubyRegexpDelimiter rubyRegexp
 
 hi link javascriptRegexpString  Regexp
+" rarean ES6 additions for pangloss/vim-javascript highlighting
+hi link jsRexexpString          Regexp
+hi link jsStatement             Statement
+hi link jsClassDefinition       Identifier
+hi link jsClassFuncName         Identifier
+hi link jsClassMethodType       PreProc
+hi link jsFunction              rubyMethod
+hi link jsFunCall               rubyMethod
+hi link jsFunName               rubyMethod
+hi link jsReturn                PreProc
+hi link jsThis                  PreProc
+hi link jsBuiltins              PreProc
+
 
 hi link diffAdded               String
 hi link diffRemoved             Statement
@@ -162,7 +175,7 @@ call s:hifg("Special"        ,"#33AA00","DarkGreen",24) " 7
 call s:hifg("Regexp"         ,"#44B4CC","DarkCyan",21) " 74
 call s:hifg("rubyMethod"     ,"#DDE93D","Yellow",77) " 191
 
-" My modifications
+" ParamagicDev modifications
 
 highlight StatusLine   guibg=#aabbee guifg=#000000 ctermbg=14 ctermfg=0 cterm=NONE gui=NONE
 highlight StatusLineNC guibg=#aabbee guifg=#000000 ctermbg=14 ctermfg=0 cterm=inverse gui=inverse
